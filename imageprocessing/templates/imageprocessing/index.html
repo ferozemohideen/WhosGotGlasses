@@ -1,0 +1,11 @@
+{% extends 'homepage/base.html' %}
+{% block body %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'imageprocessing/style.css' %}" />
+
+<h1>Welcome!!</h1>
+<ul>
+    <li><a href="{% url 'imageprocessing:glasses' %}">Are They Wearing Glasses?</a></li>
+</ul>
+
+{% endblock %}
